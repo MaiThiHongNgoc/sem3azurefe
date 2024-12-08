@@ -28,7 +28,7 @@ function Authentication() {
       {/* Sidebar */}
       <aside className="admin-sidebar">
         <div className="logo">
-          <a className="admin-dark">
+          <a href="/" className="admin-dark">
             <img
               src="https://modernize-nextjs.adminmart.com/images/logos/dark-logo.svg"
               className="admin-light"
@@ -110,7 +110,7 @@ function Authentication() {
           </button>
 
           <div className="logo1">
-            <a className="admin-dark1">
+            <a href="/" className="admin-dark1">
               <img
                 src="https://modernize-nextjs.adminmart.com/images/logos/dark-logo.svg"
                 className="admin-light"
