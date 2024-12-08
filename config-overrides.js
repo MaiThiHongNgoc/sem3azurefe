@@ -1,15 +1,11 @@
+// config-overrides.js
 module.exports = function override(config, env) {
-    // Thêm rule để xử lý tệp JavaScript trong `chart.js` với Babel
-    config.module.rules.push({
-      test: /\.m?js$/,
-      exclude: /(node_modules\/(?!chart.js))/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'],
-        },
-      },
-    });
+    // Add custom Jest configuration here, if needed
+    if (env === 'test') {
+      config.module.rules.push({
+        // Your custom Jest configuration, if any
+      });
+    }
     return config;
   };
   
