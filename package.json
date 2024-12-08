@@ -35,8 +35,8 @@
     ]
   },
   "jest": {
-    "transformIgnorePatterns": [
-      "/node_modules/(?!axios).+\\.js$"
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
     ]
   },
   "browserslist": {
